@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Untree.co">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <!-- Fonts and styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Valda &mdash; Vi bygger i træ.</title>
+    <style>
+        .site-nav {
+            background-color: #170b01; /* Dark Brown */
+        }
+    
+        .site-nav a {
+            color: #fff; /* White text for links */
+        }
+    
+        .site-nav a:hover {
+            color: #ddd; /* Lighter color for hover */
+        }
+    </style>
+    <style>
+       .hero-2 {
+    background-image: url('images/back.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Parallax effect */
+    color: #fff; /* Hvid tekst */
+    height: 100vh; /* Full viewport height */
+}
+
+        .contact-details {
+            background-color: rgba(0, 0, 0, 0.7); /* Sort med gennemsigtighed */
+            color: #fff;
+        }
+        .contact-details p {
+            color: #fff;
+        }
+        a.text-primary {
+            color: #cac8c7 !important; /* Brun links */
+        }
+ 
+
+/* CSS */
+.button-81 {
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-81:hover {
+  background-color: #9e3917;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="index.html" class="logo m-0 float-start">
+                    <img src="images/valda v.png" alt="Valda Logo" style="height: 50px;">
+                </a>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="about.html">Om Os</a></li>
+                    <li><a href="services.html">Tjenester & Processen</a></li>
+                    <li><a href="projects.html">Projekter</a></li>
+                    <li><a href="materials.html">Materialer</a></li>
+                    <li><a href="faq.html">Ofte Stillede Spørgsmål</a></li>
+                    <li class="active"><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <style>
+        .site-nav {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1000;
+          background-color: rgba(0, 0, 0, 0.05); /* Slightly transparent dark background */
+          transition: background-color 0.3s ease; /* Smooth transition */
+      }
+      
+      .site-nav.scrolled {
+          background-color: #170b01; /* Dark Brown when scrolled */
+      }
+      
+      .site-nav a {
+          color: #fff;
+      }
+      
+      .site-nav a:hover {
+          color: #ddd;
+      }
+      
+              
+             
+              /* Hero Section Overlay */
+      .hero-2.overlay {
+          position: relative;
+          z-index: 1;
+          color: #fff;
+             }
+      
+      .hero-2.overlay::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.10); /* Dark overlay */
+          z-index: -1;
+      }
+      
+      /* Hero Text Animation */
+      .hero-2 h1 span {
+          display: inline-block;
+          animation: fadeInUp 1s ease-in-out forwards;
+      }
+      
+      @keyframes fadeInUp {
+          0% {
+              transform: translateY(20px);
+              opacity: 0;
+          }
+          100% {
+              transform: translateY(0);
+              opacity: 1;
+          }
+      }
+      /* Titles */
+      h1, h2, h3, h4, h5, h6 {
+          font-family: 'Montserrat', sans-serif;
+          text-transform: uppercase;
+          font-weight: bold;
+      }
+      
+      /* Paragraphs */
+      p {
+          font-family: 'Roboto', sans-serif;
+          font-size: 1rem;
+          line-height: 1.6;
+          color: #333;
+      }
+      
+              /* Navigation Menu */
+              .site-menu {
+          display: flex;
+          justify-content: flex-end; /* Align items to the right */
+          list-style: none; /* Remove default list styling */
+          padding: 0;
+          margin: 0;
+      }
+      
+      
+      .site-menu a:hover {
+          color: #f4a261; /* Accent color for hover effect */
+      }
+      
+      /* Mobile Menu Toggle Button */
+      .burger span {
+          background: #5c4033; /* Dark brown for toggle button */
+      }
+      
+          </style>
+           <script>
+            // Get the navbar element
+            const navbar = document.querySelector('.site-nav');
+        
+            // Function to handle scroll event
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) { // If the page is scrolled down more than 50px
+                    navbar.classList.add('scrolled'); // Add the 'scrolled' class
+                } else {
+                    navbar.classList.remove('scrolled'); // Remove the 'scrolled' class when scrolling up
+                }
+            });
+        </script>
+
+<div class="hero-2 overlay">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mx-auto text-center">
+                <h1 class="mb-5 text-white fw-bold display-4">Kontakt Os</h1>
+                <div class="contact-details py-4 px-5 rounded shadow">
+                    <p class="fs-5 mb-3"><span class="icon-location me-2"></span><strong>Adresse:</strong> Sankt Hans Gade 24, 2200 København N</p>
+                    <p class="fs-5 mb-3"><span class="icon-phone me-2"></span><strong>Telefon:</strong> 53 64 35 24</p>
+                    <p class="fs-5 mb-3"><span class="icon-envelope me-2"></span><strong>Email:</strong> <a href="mailto:hej@valda.dk" class="text-primary">hej@valda.dk</a></p>
+                        <!-- HTML !-->
+
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="tel:53643524" class="button-81">Ring til Os</a>
+                        <a href="mailto:hej@valda.dk" class="button-81">Skriv til Os</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer bg-light py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Logo and Description -->
+            <div class="col-lg-4">
+                <div class="mb-4">
+                    <a href="index.html" class="footer-logo d-inline-block">
+                        <img src="images/valda23456.png" alt="Valda Logo" class="img-fluid">
+                    </a>
+                </div>
+                <p class="text-muted">Valda er din betroede partner inden for moderne træbyggeri, leverer førsteklasses løsninger med ekspertise og kreativitet.</p>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="col-lg-4">
+                <h3 class="heading mb-3">Navigering</h3>
+                <ul class="list-unstyled link">
+                    <li><a href="index.html" class="text-decoration-none text-dark">Forside</a></li>
+                    <li><a href="about.html" class="text-decoration-none text-dark">Om Os</a></li>
+                    <li><a href="services.html" class="text-decoration-none text-dark">Tjenester & Processen</a></li>
+                    <li><a href="projects.html" class="text-decoration-none text-dark">Projekter</a></li>
+                    <li><a href="materials.html" class="text-decoration-none text-dark">Materialer</a></li>
+                    <li><a href="faq.html" class="text-decoration-none text-dark">Ofte Stillede Spørgsmål</a></li>
+                    <li><a href="contact.html" class="text-decoration-none text-dark">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information and Social Links -->
+            <div class="col-lg-4">
+                <h3 class="heading mb-3">Kontakt os</h3>
+                <ul class="list-unstyled link">
+                    <li><a href="tel:+537653624" class="text-decoration-none text-dark">+53 76 53 624</a></li>
+                    <li><a href="mailto:info@valda.dk" class="text-decoration-none text-dark">info@valda.dk</a></li>
+                </ul>
+                <div class="d-flex social-links mt-3">
+                    <a href="#" class="text-dark me-3" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-dark me-3" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-dark me-3" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-dark" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row mt-5">
+            <div class="col-md-6 text-center text-md-start">
+                <p>&copy; 2024 Valda. Alle rettigheder forbeholdes.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="d-flex align-items-center justify-content-md-end justify-content-center">
+                   </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

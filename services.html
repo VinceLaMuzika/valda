@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="da">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="author" content="vbdynamics.co.za">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<meta name="description" content="Valdas Tjenester - Træstrukturer Skabt med Skandinavisk Kvalitet" />
+	<meta name="keywords" content="tjenester, konstruktion, træstrukturer, håndværk" />
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/glightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Valda &mdash; Vi bygger i træ.</title>
+</head>
+<body>
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="index.html" class="logo m-0 float-start">
+                    <img src="images/valda v.png" alt="Valda Logo" style="height: 50px;">
+                </a>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="about.html">Om Os</a></li>
+                    <li  class="active"><a href="services.html">Tjenester & Processen</a></li>
+                    <li><a href="projects.html">Projekter</a></li>
+                    <li><a href="materials.html">Materialer</a></li>
+                    <li><a href="faq.html">Ofte Stillede Spørgsmål</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <style>
+        .site-nav {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1000;
+          background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent dark background */
+          transition: background-color 0.3s ease; /* Smooth transition */
+      }
+      
+      .site-nav.scrolled {
+          background-color: #170b01; /* Dark Brown when scrolled */
+      }
+      
+      .site-nav a {
+          color: #fff;
+      }
+      
+      .site-nav a:hover {
+          color: #ddd;
+      }
+      
+              
+             
+              /* Hero Section Overlay */
+      .hero-2.overlay {
+          position: relative;
+          z-index: 1;
+          color: #fff;
+          text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+      }
+      
+      .hero-2.overlay::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.10); /* Dark overlay */
+          z-index: -1;
+      }
+      
+      /* Hero Text Animation */
+      .hero-2 h1 span {
+          display: inline-block;
+          animation: fadeInUp 1s ease-in-out forwards;
+      }
+      
+      @keyframes fadeInUp {
+          0% {
+              transform: translateY(20px);
+              opacity: 0;
+          }
+          100% {
+              transform: translateY(0);
+              opacity: 1;
+          }
+      }
+      /* Titles */
+      h1, h2, h3, h4, h5, h6 {
+          font-family: 'Montserrat', sans-serif;
+          text-transform: uppercase;
+          font-weight: bold;
+      }
+      
+      /* Paragraphs */
+      p {
+          font-family: 'Roboto', sans-serif;
+          font-size: 1rem;
+          line-height: 1.6;
+          color: #333;
+      }
+      
+              /* Navigation Menu */
+              .site-menu {
+          display: flex;
+          justify-content: flex-end; /* Align items to the right */
+          list-style: none; /* Remove default list styling */
+          padding: 0;
+          margin: 0;
+      }
+      
+      
+      .site-menu a:hover {
+          color: #f4a261; /* Accent color for hover effect */
+      }
+      
+      /* Mobile Menu Toggle Button */
+      .burger span {
+          background: #5c4033; /* Dark brown for toggle button */
+      }
+      
+          </style>
+           <script>
+            // Get the navbar element
+            const navbar = document.querySelector('.site-nav');
+        
+            // Function to handle scroll event
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) { // If the page is scrolled down more than 50px
+                    navbar.classList.add('scrolled'); // Add the 'scrolled' class
+                } else {
+                    navbar.classList.remove('scrolled'); // Remove the 'scrolled' class when scrolling up
+                }
+            });
+        </script>
+
+<div class="hero-2 overlay" style="background-image: url('images/back.jpeg'); background-attachment: fixed; background-size: cover; background-position: center;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 mx-auto">
+                <h1 class="mb-5 text-center"><span> Tjenester & Processen</span></h1>
+				 <!-- Divider Line -->
+				 <div class="intro-desc text-left mb-4">
+					<div class="line" style="height: 2px; width: 80px; background-color: #0dcaf0; margin: 0 auto;"></div>
+				</div>
+				<!-- Downward Arrow Icon -->
+				<a href="#about" class="d-block mt-4 text-center">
+					<i class="fa fa-arrow-down text-white" style="font-size: 40px;"></i>
+				</a>
+				<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+                <div class="intro-desc text-left">
+                    <div class="line"></div>
+                    <p>Vi tilbyder eksperttjenester indenfor træbyggeri med skandinavisk præcision.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+<div class="section sec-4">
+    <div class="container">
+        <div class="row g-5">
+            <!-- Paragraph 1 -->
+            <div class="col-12">
+                <h3 class="h6 fw-bold text-black">Træ i hjertet af det hele</h3>
+                <p class="text-black-50">
+                    “Fra gæstehuse og sommerhuse til saunaer, carporte og hustilbygninger er træ det centrale byggemateriale. Vi kombinerer det med funktionalitet og æstetik for at matche dine behov og ønsker.”
+                </p>
+            </div>
+    
+            <!-- Paragraph 2 -->
+            <div class="col-12">
+                <h3 class="h6 fw-bold text-black">Sådan arbejder vi – Fra idé til færdigt projekt</h3>
+                <p class="text-black-50">
+                    Vi møder dig, uanset hvor du er i processen. Vi hjælper både kunder med færdige tegninger og dem med bare en idé, de ønsker at realisere. Uanset om du leder efter en nøglefærdig løsning eller en gør-det-selv mulighed, guider vi dig hele vejen.
+                </p>
+            </div>
+    
+            <!-- Paragraph 3 -->
+            <div class="col-12">
+                <h3 class="h6 fw-bold text-black">Har du allerede tegninger eller et færdigt projekt?</h3>
+                <p class="text-black-50">
+                    Vi kan hurtigt give et tilbud og begynde byggeriet. Vi står for materialelevering og montage, så du får et smukt og funktionelt resultat.
+                </p>
+            </div>
+    
+            <!-- Paragraph 4 -->
+            <div class="col-12">
+                <h3 class="h6 fw-bold text-black">Har du en idé?</h3>
+                <p class="text-black-50">
+                    Vi hjælper dig med at forfine den. Vi laver en 3D-model for at visualisere din vision og gøre det nemt at finde den rigtige løsning. Vi kan bygge projektet for dig med fokus på kvalitet og præcision.
+                </p>
+            </div>
+    
+            <!-- Paragraph 5 -->
+            <div class="col-12">
+                <h3 class="h6 fw-bold text-black">DIY med Valda – Du bestemmer selv, hvor meget hjælp du har brug for</h3>
+                <p class="text-black-50">
+                    Drømmer du om at bygge dit eget gæstehus, sauna eller sommerhus? Valda tilbyder fleksibel support, så du kan få kontrol over byggeprocessen – med præcis det niveau af hjælp, du ønsker.
+                </p>
+                <p class="text-black-50">
+                    <strong>Materialer og planlægning:</strong> Vi beregner og leverer materialer. Vi hjælper med planlægning og tegninger for at sikre, at projektet er klart og overskueligt.
+                </p>
+                <p class="text-black-50">
+                    <strong>DIY Under Supervision:</strong> Få professionel rådgivning undervejs for at undgå fejl og sikre et smukt, holdbart resultat.
+                </p>
+                <p class="text-black-50">
+                    <strong>Delvis opbygning:</strong> Lad os håndtere de strukturelle komponenter, som vægge og tage, mens du afslutter projektet selv.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+	
+	<footer class="footer bg-light py-5">
+		<div class="container">
+			<div class="row g-4">
+				<!-- Logo and Description -->
+				<div class="col-lg-4">
+					<div class="mb-4">
+						<a href="index.html" class="footer-logo d-inline-block">
+							<img src="images/valda23456.png" alt="Valda Logo" class="img-fluid">
+						</a>
+					</div>
+					<p class="text-muted">Valda er din betroede partner inden for moderne træbyggeri, leverer førsteklasses løsninger med ekspertise og kreativitet.</p>
+				</div>
+				<!-- Navigation Links -->
+				<div class="col-lg-4">
+					<h3 class="heading mb-3">Navigering</h3>
+					<ul class="list-unstyled link">
+						<li><a href="index.html" class="text-decoration-none text-dark">Hjem</a></li>
+						<li><a href="projects.html" class="text-decoration-none text-dark">Projekter</a></li>
+						<li><a href="services.html" class="text-decoration-none text-dark">Tjenester</a></li>
+						<li><a href="about.html" class="text-decoration-none text-dark">Om os</a></li>
+						<li><a href="contact.html" class="text-decoration-none text-dark">Kontakt os</a></li>
+					</ul>
+				</div>
+				<!-- Contact Information and Social Links -->
+				<div class="col-lg-4">
+					<h3 class="heading mb-3">Kontakt os</h3>
+					<ul class="list-unstyled link">
+						<li><a href="tel:+537653624" class="text-decoration-none text-dark">+53 76 53 624</a></li>
+						<li><a href="mailto:info@valda.dk" class="text-decoration-none text-dark">info@valda.dk</a></li>
+					</ul>
+					<div class="d-flex social-links mt-3">
+						<a href="#" class="text-dark me-3" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" class="text-dark me-3" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+						<a href="#" class="text-dark me-3" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+						<a href="#" class="text-dark" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- Footer Bottom -->
+			<div class="row mt-5">
+				<div class="col-md-6 text-center text-md-start">
+					<p>&copy; 2024 Valda. Alle rettigheder forbeholdes.</p>
+				</div>
+				<div class="col-md-6 text-center text-md-end">
+					<p class="d-flex align-items-center justify-content-md-end justify-content-center">
+			<img src="images/vbd-logo.png" alt="VB Dynamics logo" style="width: 40px;">
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	   <!-- Preloader -->
+<div id="preloader">
+    <div id="preloader-content">
+        <img src="images/valda23456.png" alt="Loading..." id="preloader-logo">
+        <div id="loading-circle"></div>
+    </div>
+</div>
+
+<style>
+/* Full-screen preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears above other content */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s ease-in-out; /* Smooth fade-in and fade-out */
+}
+
+/* Preloader content container */
+#preloader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo styling */
+#preloader-logo {
+    width: 150px; /* Adjust the size of the logo */
+    height: auto;
+    margin-bottom: 20px; /* Space between logo and loading circle */
+}
+
+/* Loading circle styling */
+#loading-circle {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.2); /* Light gray border */
+    border-top: 4px solid #000; /* Dark border for the animation */
+    border-radius: 50%; /* Make it a circle */
+    animation: spin 1s linear infinite; /* Infinite spinning animation */
+}
+
+/* Fade-in when the page starts loading */
+body:not(.loaded) #preloader {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hide the preloader with a fade-out effect when the page is loaded */
+body.loaded #preloader {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Spinning animation for the circle */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+</style>
+
+<script>
+// Wait until the page is fully loaded
+window.onload = function () {
+    // Delay for 3 seconds before hiding the preloader
+    setTimeout(function () {
+        document.body.classList.add('loaded');
+    }, 1000); // Delay in milliseconds (3000ms = 3 seconds)
+};
+</script>
+
+	<!-- Scripts -->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/tiny-slider.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/glightbox.min.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/main.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Untree.co">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Materialer vi bruger i vores byggeprojekter." />
+    <meta name="keywords" content="materialer, træbyggeri, bæredygtige materialer" />
+
+    <!-- Fonts and styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Materialer &mdash; Vi bygger i træ.</title>
+    <style>
+        .site-nav {
+            background-color: #170b01; /* Dark Brown */
+        }
+
+        .site-nav a {
+            color: #fff; /* White text for links */
+        }
+
+        .site-nav a:hover {
+            color: #ddd; /* Lighter color for hover */
+        }
+
+        .hero-2 {
+    background-image: url('images/back.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Parallax effect */
+    color: #fff; /* White text */
+}
+
+
+        .btn-custom {
+            border-radius: 25px;
+            background-color: #5c4033; /* Brown button */
+            color: #fff;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #3e2c24; /* Darker brown on hover */
+            color: #fff;
+        }
+
+        .btn-outline-primary {
+            border-color: #5c4033;
+            color: #5c4033;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #5c4033;
+            color: #fff;
+        }
+
+        .materials-section {
+            padding: 60px 0;
+        }
+
+        .material-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .material-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .material-card-body {
+            padding: 20px;
+        }
+
+        .material-card-body h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        .material-card-body p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .material-card-body .btn-custom {
+            background-color: #5c4033;
+            color: #fff;
+            border: none;
+        }
+
+        .material-card-body .btn-custom:hover {
+            background-color: #3e2c24;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="index.html" class="logo m-0 float-start">
+                    <img src="images/valda v.png" alt="Valda Logo" style="height: 50px;">
+                </a>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="about.html">Om Os</a></li>
+                    <li><a href="services.html">Tjenester & Processen</a></li>
+                    <li><a href="projects.html">Projekter</a></li>
+                    <li  class="active"><a href="materials.html">Materialer</a></li>
+                    <li><a href="faq.html">Ofte Stillede Spørgsmål</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <style>
+        .site-nav {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1000;
+          background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent dark background */
+          transition: background-color 0.3s ease; /* Smooth transition */
+      }
+      
+      .site-nav.scrolled {
+          background-color: #170b01; /* Dark Brown when scrolled */
+      }
+      
+      .site-nav a {
+          color: #fff;
+      }
+      
+      .site-nav a:hover {
+          color: #ddd;
+      }
+      
+              
+             
+              /* Hero Section Overlay */
+      .hero-2.overlay {
+          position: relative;
+          z-index: 1;
+          color: #fff;
+          text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+      }
+      
+      .hero-2.overlay::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.10); /* Dark overlay */
+          z-index: -1;
+      }
+      
+      /* Hero Text Animation */
+      .hero-2 h1 span {
+          display: inline-block;
+          animation: fadeInUp 1s ease-in-out forwards;
+      }
+      
+      @keyframes fadeInUp {
+          0% {
+              transform: translateY(20px);
+              opacity: 0;
+          }
+          100% {
+              transform: translateY(0);
+              opacity: 1;
+          }
+      }
+      /* Titles */
+      h1, h2, h3, h4, h5, h6 {
+          font-family: 'Montserrat', sans-serif;
+          text-transform: uppercase;
+          font-weight: bold;
+      }
+      
+      /* Paragraphs */
+      p {
+          font-family: 'Roboto', sans-serif;
+          font-size: 1rem;
+          line-height: 1.6;
+          color: #333;
+      }
+      
+              /* Navigation Menu */
+              .site-menu {
+          display: flex;
+          justify-content: flex-end; /* Align items to the right */
+          list-style: none; /* Remove default list styling */
+          padding: 0;
+          margin: 0;
+      }
+      
+      
+      .site-menu a:hover {
+          color: #f4a261; /* Accent color for hover effect */
+      }
+      
+      /* Mobile Menu Toggle Button */
+      .burger span {
+          background: #5c4033; /* Dark brown for toggle button */
+      }
+      
+          </style>
+           <script>
+            // Get the navbar element
+            const navbar = document.querySelector('.site-nav');
+        
+            // Function to handle scroll event
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) { // If the page is scrolled down more than 50px
+                    navbar.classList.add('scrolled'); // Add the 'scrolled' class
+                } else {
+                    navbar.classList.remove('scrolled'); // Remove the 'scrolled' class when scrolling up
+                }
+            });
+        </script>
+    
+    <div class="hero-2 overlay py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h1 class="mb-5 text-white fw-bold display-4">Materialer</h1>
+                    <p class="fs-5 mb-4 text-white">Vi bruger kun de bedste og mest bæredygtige materialer til vores byggeprojekter.</p>
+                    <!-- Divider Line -->
+                    <div class="intro-desc text-left mb-4">
+                        <div class="line" style="height: 2px; width: 80px; background-color: #0dcaf0; margin: 0 auto;"></div>
+                    </div>
+                    <!-- Downward Arrow Icon -->
+                    <a href="#about" class="d-block mt-4 text-center">
+                        <i class="fa fa-arrow-down text-white" style="font-size: 40px;"></i>
+                    </a>
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="info-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-3">Grantræ – skabt til tidløs kvalitet og holdbarhed</h2>
+                    <p>Unikke profiler til både indvendige og udvendige facader</p>
+                    <p>Hos Valda er vi stolte af at forene tradition og innovation i vores egne specialproducerede profiler. Vores materialer bygger på århundredgamle svenske byggetraditioner, og grantræ er hjertet i vores arbejde – og med god grund.</p>
+                    <p>Vi bruger langsomt voksende grantræ fra det nordlige Sverige, hvor de kolde klimaer skaber træ af enestående kvalitet. Grantræets færre og mindre knaster og dets lavere harpiksindhold giver et smukt og mere holdbart resultat – langt overlegen i forhold til fyr, som ellers er almindeligt i dansk byggeri.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="materials-section py-5 bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <!-- Evedal Title -->
+                <div class="col-12 text-center">
+                    <h3 class="mb-3"><strong>Evedal</strong></h3>
+                    <p><strong>Evedal Facadepanel</strong> lavet af svensk grantræ, kan monteres både horisontalt og vertikalt, hvilket giver stor designfrihed. Med sin brede profil (160 mm) skaber det et minimalistisk og stilrent udtryk, mens den dybe profil mellem brædderne skaber en markant 3D-effekt. Panelet kan anvendes både malet og umalet – når det forbliver umalet, patinerer det smukt og udvikler en naturlig grå nuance. Hvis panelet skal males, leveres det præmalet fra Sverige, så der kun kræves en slutmaling efter installationen. Dette sikrer en hurtig og effektiv installation.</p>
+                    <h6><strong>Pris:</strong>170 DKK/m² + VAT (minimum 100 m²).</h6>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Material Card 1: Evedal Exterior 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/evedal exterior 2.jpeg" alt="Evedal Exterior 2" class="card-img-top">
+                    </div>
+                </div>
+                <!-- Material Card 2: Evedal Exterior 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/evedal exterior1.jpeg" alt="Evedal Exterior 1" class="card-img-top">
+                    </div>
+                </div>
+                <!-- Material Card 3: Evedal Wood 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/evedal wood 1.jpg" alt="Evedal Wood 1" class="card-img-top">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mt-5">
+                <!-- Elvy Title -->
+                <div class="col-12 text-center">
+                    <h3 class="mb-3"><strong>Elvy</strong></h3>
+                    <p><strong>Elvy Interiør Panel</strong> fremstillet af svensk grantræ, er skabt til at bringe lys og varme ind i ethvert rum. Med en tykkelse på 20 mm og en visuel bredde på 160 mm er det ideelt til vægge, lofter og let trafikerede gulve i gæstehuse eller sommerhuse. Panelet leverer en færdig væg eller loftsoverflade ved installation, hvilket gør det til en både hurtig og prisvenlig løsning. Hvis panelerne skal males, leveres de præmalede fra Sverige, så der kun kræves en slutmaling efter installationen. Dette sparer tid og sikrer et flot og ensartet resultat.</p>
+                    <h6><strong>Pris:</strong>120 DKK/m² + VAT (minimum 100 m²).</h6>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Material Card 4: Elvy Interior 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/elvy interior1.jpeg" alt="Elvy Interior 1" class="card-img-top">
+                    </div>
+                </div>
+                <!-- Material Card 5: Elvy Interior -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/elvy interior.jpeg" alt="Elvy Interior" class="card-img-top">
+                    </div>
+                </div>
+                <!-- Material Card 6: Elvy Wood -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/elvy wood.jpeg" alt="Elvy Wood" class="card-img-top">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="why-choose-valda py-5" style="background: linear-gradient(to right,#5c4033, #f0730d, #5c4033);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="mb-4 text-white" style="font-family: 'Quicksand', sans-serif; font-size: 2.5rem; font-weight: 700;"><strong>Hvorfor vælge Valda’s gran?</strong></h3>
+                    <p class="text-white mx-auto" style="max-width: 800px; font-family: 'Quicksand', sans-serif; font-size: 1.1rem; line-height: 1.6;">
+                        Med <strong>Evedal</strong> og <strong>Elvy</strong> profilerne leverer vi materialer, der forener skandinavisk æstetik med solid funktionalitet. 
+                        Grantræet, malet eller umalet, er ikke bare et valg – det er en hyldest til det bedste fra naturen og svensk byggekultur. 
+                        Smukt, holdbart og skabt til at ældes med ynde.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <footer class="footer bg-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-4">
+                    <div class="mb-4">
+                        <a href="index.html" class="footer-logo d-inline-block">
+                            <img src="images/valda23456.png" alt="Valda Logo" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="text-muted">Valda er din betroede partner inden for moderne træbyggeri, leverer førsteklasses løsninger med ekspertise og kreativitet.</p>
+                </div>
+    
+                <!-- Navigation Links -->
+                <div class="col-lg-4">
+                    <h3 class="heading mb-3">Navigering</h3>
+                    <ul class="list-unstyled link">
+                        <li><a href="index.html" class="text-decoration-none text-dark">Forside</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-dark">Om Os</a></li>
+                        <li><a href="services.html" class="text-decoration-none text-dark">Tjenester & Processen</a></li>
+                        <li><a href="projects.html" class="text-decoration-none text-dark">Projekter</a></li>
+                        <li><a href="materials.html" class="text-decoration-none text-dark">Materialer</a></li>
+                        <li><a href="faq.html" class="text-decoration-none text-dark">Ofte Stillede Spørgsmål</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-dark">Kontakt</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Information and Social Links -->
+                <div class="col-lg-4">
+                    <h3 class="heading mb-3">Kontakt os</h3>
+                    <ul class="list-unstyled link">
+                        <li><a href="tel:+537653624" class="text-decoration-none text-dark">+53 76 53 624</a></li>
+                        <li><a href="mailto:info@valda.dk" class="text-decoration-none text-dark">info@valda.dk</a></li>
+                    </ul>
+                    <div class="d-flex social-links mt-3">
+                        <a href="#" class="text-dark me-3" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-dark me-3" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-dark me-3" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-dark" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="row mt-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2024 Valda. Alle rettigheder forbeholdes.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="d-flex align-items-center justify-content-md-end justify-content-center">
+                       </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
